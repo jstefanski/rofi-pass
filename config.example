@@ -45,8 +45,6 @@ help_color="#4872FF"
 clip=primary
 
 # Options for generating new password entries
-default_user=john_doe
-default_user2=mary_ann
 password_length=12
 
 # Custom Keybindings
@@ -65,4 +63,3 @@ action_menu="Alt+a"
 type_menu="Alt+t"
 help="Alt+h"
 switch="Alt+x"
-insert_pass="Alt+n"

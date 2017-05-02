@@ -55,19 +55,7 @@ rofi-pass may read its configuration values from `/etc/rofi-pass` and/or `$HOME/
 For an example configuration please take a look at the included `config.example` file.
 
 ## Extras
-rofi-pass comes with a tiny helper script, which makes it easier to create new pass entries.
-Just run it with
-
-```
-addpass --name "My new Site" +user "zeltak" +branch "branch" +custom "foobar" +autotype "branch :tab user :tab pass"
-```
-
-* First argument `--name` is mandatory. This will be the filename of the new password entry.
-* Second argument can be `--root` followed by absolute path to your password-store. addpass also uses root config setting from rofi-pass config file. If both are not found, PASSWORD_STORE_DIR variable is checked. If none of the above are found, the default location `$HOME/.password-store` is used.
-
-* Fieldnames are defined with `+` and the actual value is defined inside the quotations. You can add as many fields as you like
-
-Also included is an import script for keepass2 databases. It's the same script that can be downloaded from the pass homepage, with some minor modifications to match rofi-pass structure.
+rofi-pass comes with an import script for keepass2 databases. It's the same script that can be downloaded from the pass homepage, with some minor modifications to match rofi-pass structure.
 
 ## FAQ
 
