@@ -254,9 +254,8 @@ mainMenu () {
     fi
   else
     unset selected_password
-    HELP="Welcome to rofi-pass. Run ${default_do} with <span color='$help_color'>Enter</span>. For more help hit <span color='$help_color'>${help}</span>."
     selected_password="$(list_passwords 2>/dev/null \
-      | _rofi -mesg "${HELP}" \
+      | _rofi \
       -dmenu -kb-custom-1 "${autotype}" \
       -kb-custom-2 "${type_user}" \
       -kb-custom-3 "${type_pass}" \
