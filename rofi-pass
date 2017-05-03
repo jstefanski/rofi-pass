@@ -245,7 +245,7 @@ mainMenu () {
       -dmenu \
       -kb-custom-1 "Alt+x" \
       -select "$entry" \
-      -p "rofi-pass > ")"
+      -p "pass:")"
 
     rofi_exit=$?
 
@@ -278,7 +278,7 @@ Run ${default_do} with <span color='$help_color'>Enter</span>. For more help hit
       -kb-custom-18 "${insert_pass}" \
       -dmenu \
       -select "$entry" \
-      -p "rofi-pass > ")"
+      -p "pass:")"
 
     rofi_exit=$?
     if [[ $rofi_exit -eq 1 ]]; then
