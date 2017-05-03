@@ -241,7 +241,7 @@ mainMenu () {
       -dmenu \
       -kb-custom-1 "Alt+x" \
       -select "$entry" \
-      -p "rofi-pass > ")"
+      -p "pass:")"
 
     rofi_exit=$?
 
@@ -271,7 +271,7 @@ mainMenu () {
       -kb-custom-17 "${switch}" \
       -dmenu \
       -select "$entry" \
-      -p "rofi-pass > ")"
+      -p "pass:")"
 
     rofi_exit=$?
     if [[ $rofi_exit -eq 1 ]]; then
